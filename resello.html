@@ -9,11 +9,11 @@
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
 		<link href="css/style.css" rel="stylesheet">
-
+        <link rel="shortcut icon" href=”favicon.ico”/>
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark ">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -33,8 +33,8 @@
           Servicios
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="remisos.html">Remisos</a>
-          <a class="dropdown-item" href="reposicion.html">Reposición</a>
+          <a class="dropdown-item" href="remisos.html">Reposición</a>
+          <a class="dropdown-item" href="reposicion.html">Remisos</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="resello.html">Resello</a>
         </div>
@@ -50,13 +50,18 @@
 
       <!--main-->
       <div class="">
+       <h1 class="text-center text-success">
+				Servicio Militar Nacional
+			</h1>
+			<h3 class="text-center text-success">Formulario de cartillas nuevas</h3>
+			
         <form class="form-horizontal" action="remisossmn.php"  method="POST">
                     <fieldset>  
                         <legend class="text-center header"></legend>
                          <span class="col-md-1 col-md-offset-1 text-left"></span>
                             <div class="col-md-4">
                              <label for="NoCartilla">No. Cartilla</label>
-                                <input type="nombre" name="nombre" class="form-control" id="nombre" placeholder="Nombre">
+                                <input type="number" name="nombre" class="form-control" id="NoCartilla" placeholder="NoCartilla">
                                 <br>
                              <br>
                         <button type="submit" class="btn btn-success" value="Siguiente">Siguiente</button>
